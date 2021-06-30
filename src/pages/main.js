@@ -1,11 +1,8 @@
-import react from "react"
+import react from 'react'
+import './main.scss'
 
-
-function Main(){
-    return (
-        <div><p>main</p></div>
-        
-    )
+function Main() {
+  return <div class="checker">main</div>
 }
 
-export default Main;
+export default Main

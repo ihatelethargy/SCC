@@ -1,0 +1,19 @@
+.checker {
+  width: 100%;
+  height: 100vh;
+}
+@media all and (min-width: 320px) {
+  .checker {
+    background-color: red;
+  }
+}
+@media all and (min-width: 768px) {
+  .checker {
+    background-color: blue;
+  }
+}
+@media all and (min-width: 1024px) {
+  .checker {
+    background-color: brown;
+  }
+}
