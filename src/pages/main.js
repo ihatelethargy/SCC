@@ -1,9 +1,11 @@
 import react from "react"
-
+import Topbutton from "../components/Topbutton/Topbutton";
 
 function Main(){
     return (
-        <div><p>main</p></div>
+        <div>
+            <Topbutton />
+        </div>
         
     )
 }

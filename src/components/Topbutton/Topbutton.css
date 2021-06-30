@@ -1,0 +1,40 @@
+/* .back-to-top .top{
+    position: fixed;
+    cursor: pointer;
+    bottom: 15px;
+    right: 15px;
+    font-size: 25px;
+    color:aqua;
+    background-color: blue;
+    z-index: 4;
+    width: 45px;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.back-to-top .top:hover{
+    color:blueviolet;
+    background: #ff3366;
+} */
+
+.topbutton {
+    position: fixed;
+    cursor: pointer;
+    bottom: 150px;
+    right: 15px;
+    font-size: 20px;
+    color:darkgray;
+    background-color: antiquewhite;
+    z-index: 4;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 50%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
