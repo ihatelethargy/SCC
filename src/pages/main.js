@@ -9,7 +9,7 @@ function Main() {
   return (
     <div class="mainWrapper">
       <Header />
-      <div className="sec1"></div>
+      <div className="sec1" id="top"></div>
       <div className="sec2"></div>
       <div className="sec3"></div>
       <Topbutton />
