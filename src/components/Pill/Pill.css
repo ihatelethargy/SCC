@@ -1,0 +1,75 @@
+/* .main-con03-inner{
+    position: relative;
+    float: none !important;
+    width: 420px !important;
+    height: 100px !important;
+    display: inline-block !important;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    left: 55px;
+    transition: all 0.4s;
+    background-color: #2e79eb;
+  
+}
+
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 1;
+    width: 352px;
+    transform: translate3d(0px, 0px, 0px);
+    background-color: red;
+}
+
+.slick-slide{
+    
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    width: 880px;
+    background-color: yellow
+} */
+
+
+
+.pill{
+    position: relative;
+    float: none !important;
+    width: 320px !important;
+    height: 150px;
+    height: 100px !important;
+    display: inline-block !important;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    left: 55px;
+    transition: all 0.4s;
+    background-color: #2e79eb;
+}
+
+.comment{
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left:28%;
+    padding-top:8%;
+    line-height: 130%;
+}
+
+.arrow{
+    content: '';
+    width: 25px; /* 사이즈 */
+    height: 25px; /* 사이즈 */
+    border-top: 5px solid white; /* 선 두께 */
+    border-right: 5px solid white; /* 선 두께 */
+    display: inline-block;
+    transform: rotate(45deg); /* 각도 */
+    position: absolute;
+    top: 35%; 
+    left: 80%; 
+}
