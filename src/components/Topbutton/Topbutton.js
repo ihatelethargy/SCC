@@ -57,7 +57,9 @@ import './Topbutton.css'
 function Topbutton(){
     return (
         <div class="topbutton">
-            <p>↑</p>
+            <div class="topArrow">
+                <span></span>
+            </div>
         </div>
         
     )
