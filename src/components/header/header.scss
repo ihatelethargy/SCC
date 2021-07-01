@@ -8,6 +8,28 @@
   z-index: 1000;
   top: 0;
 }
+.menuItem {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menuItem span:before {
+  content: '';
+  position: absolute;
+  background-color: dodgerblue;
+  height: 0.3rem;
+  width: 0;
+  bottom: -1px;
+  transition: 0.5s;
+}
+
+.menuItem span:hover:before {
+  width: 100%;
+}
+
 // end common
 
 // start mobile
@@ -15,6 +37,10 @@
   .header {
     background-color: #303243;
     height: 3rem;
+    .shortDown {
+      // display: block;
+      font-size: 0.8rem;
+    }
     .logoWrapper {
       width: 30%;
       display: flex;
@@ -27,6 +53,7 @@
     }
     .menuWrapper {
       width: 70%;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -58,6 +85,10 @@
 // start desktop
 @media all and (min-width: 1024px) {
   .header {
+    .shortDown {
+      // display: block;
+      font-size: 2.3rem;
+    }
     background-color: #303243;
     height: 5rem;
     .logoWrapper {
