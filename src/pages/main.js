@@ -1,12 +1,10 @@
-import react from "react"
-
-import Form from "../components/form/form";
+import react, { useEffect } from "react"
 
 function Main(){
+
     return (
         <>
         <div><p>main</p></div>
-        <Form/>
         </>
     )
 }
