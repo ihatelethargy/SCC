@@ -1,0 +1,25 @@
+.formContainer {
+    width: 100%;
+    min-height: 495px;
+    border-radius: 20px;
+    box-shadow: rgb(0 0 0 / 28%) 0px 0px 11px 0px;
+    background-color: white;
+    z-index: 7;
+}
+.selectContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.formBox {
+    display: block;
+    padding: 30px 40px;
+}
+.categoryBox {
+    border : 1px, solid, #000000;
+}
+
+
+.inputContainer {
+    width: 70%;
+}
