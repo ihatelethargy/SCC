@@ -1,10 +1,11 @@
-import react from "react"
-
+import react, { useEffect } from "react"
 
 function Main(){
+
     return (
+        <>
         <div><p>main</p></div>
-        
+        </>
     )
 }
 
