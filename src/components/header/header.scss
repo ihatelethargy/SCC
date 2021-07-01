@@ -8,27 +8,6 @@
   z-index: 1000;
   top: 0;
 }
-.menuItem {
-  cursor: pointer;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.menuItem span:before {
-  content: '';
-  position: absolute;
-  background-color: dodgerblue;
-  height: 0.3rem;
-  width: 0;
-  bottom: -1px;
-  transition: 0.5s;
-}
-
-.menuItem span:hover:before {
-  width: 100%;
-}
 
 // end common
 
@@ -66,6 +45,29 @@
           width: 1.5rem;
         }
       }
+
+      .menuItem {
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+
+      .menuItem span:before {
+        content: '';
+        position: absolute;
+        background-color: dodgerblue;
+        height: 0.3rem;
+        width: 0;
+        bottom: -1px;
+        transition: 0.5s;
+      }
+
+      .menuItem span:hover:before {
+        width: 1.8rem;
+      }
+
       .hamItem {
         display: flex;
         align-items: center;
@@ -116,6 +118,43 @@
           display: block;
           width: 1.5rem;
         }
+      }
+      .menuItem {
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+
+      .menuItem span:before {
+        content: '';
+        position: absolute;
+        background-color: dodgerblue;
+        height: 0.3rem;
+        width: 0;
+        bottom: -1px;
+        transition: 0.5s;
+      }
+      .menuItem {
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+
+      .menuItem span:before {
+        content: '';
+        position: absolute;
+        background-color: dodgerblue;
+        height: 0.3rem;
+        width: 0;
+        bottom: -1px;
+        transition: 0.5s;
+      }
+      .menuItem span:hover:before {
+        width: 5rem;
       }
       .hamItem {
         display: none;
