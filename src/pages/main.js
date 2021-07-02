@@ -2,7 +2,7 @@ import react from 'react';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import Topbutton from '../components/topbutton/topbutton';
-
+import ApplyPillButton from '../components/applypillbutton/applypillbutton';
 import './scss/main.scss';
 
 function Main() {
@@ -13,6 +13,7 @@ function Main() {
       <div className="sec2"></div>
       <div className="sec3"></div>
       <Topbutton />
+      <ApplyPillButton />
       <Footer />
     </div>
   );
