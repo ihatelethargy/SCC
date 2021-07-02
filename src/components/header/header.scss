@@ -7,15 +7,15 @@
   position: fixed;
   z-index: 1000;
   top: 0;
+  font-family: 'ONE-Mobile-Regular';
+  background-color: rgba(48, 50, 67, 0.6);
 }
-
 // end common
 
 // start mobile
 @media all and (min-width: 320px) {
   .header {
-    background-color: #303243;
-    height: 3rem;
+    height: 12vh;
     .shortDown {
       // display: block;
       font-size: 0.8rem;
@@ -34,16 +34,14 @@
       width: 70%;
       height: 100%;
       display: flex;
+      // display: none;
       align-items: center;
       justify-content: space-around;
       .menuItem {
+        display: none;
         font-size: 0.7rem;
         color: #ffffff;
         font-weight: 800;
-        .ham {
-          display: block;
-          width: 1.5rem;
-        }
       }
 
       .menuItem {
@@ -52,6 +50,7 @@
         display: flex;
         align-items: center;
         position: relative;
+        display: none;
       }
 
       .menuItem span:before {
@@ -70,7 +69,14 @@
 
       .hamItem {
         display: flex;
+        justify-content: flex-end;
+        width: 100%;
         align-items: center;
+      }
+      .ham {
+        display: block;
+        width: 1.5rem;
+        margin-right: 0.8rem;
       }
     }
   }
@@ -87,24 +93,28 @@
 // start desktop
 @media all and (min-width: 1024px) {
   .header {
+    background-color: #303243;
+    height: 12vh;
     .shortDown {
       // display: block;
-      font-size: 2.3rem;
+      font-size: 2.1rem;
     }
     background-color: #303243;
-    height: 5rem;
+
     .logoWrapper {
-      width: 30%;
+      width: 15%;
+      // border: 1px solid red;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       img {
         display: block;
-        width: 35%;
+        width: 10rem;
       }
     }
     .menuWrapper {
-      width: 70%;
+      width: 40%;
       //   border: 2px solid red;
 
       display: flex;

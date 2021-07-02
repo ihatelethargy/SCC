@@ -1,0 +1,28 @@
+.sliderWrapper {
+  img {
+  }
+}
+
+.slideOne {
+  img {
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sliderWrapper {
+    img {
+    }
+  }
+
+  .slideOne {
+    img {
+      display: block;
+      margin: 0px auto;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
