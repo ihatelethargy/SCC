@@ -8,9 +8,10 @@
 @media all and (min-width: 320px) {
   .mainWrapper {
     .sec1 {
-      margin-top: 12vh;
+      // border-bottom: 1px solid blue;
+      padding-top: 12vh;
       width: 100%;
-      height: 90vh;
+      height: 50vh;
       background-color: #fff;
       .sliderWrapper {
         display: none;
@@ -26,29 +27,50 @@
     .sec2 {
       width: 100%;
       height: 100vh;
-      background-color: gray;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid blue;
     }
     .sec3 {
       width: 100%;
       height: 100vh;
-      background-color: blue;
+      border-bottom: 1px solid blue;
     }
   }
 }
 @media all and (min-width: 768px) {
-  .mainWrapper {
-    .sec1 {
+  .sec1 {
+    padding-top: 12vh;
+    width: 100%;
+    height: 200vh;
+    background-color: #fff;
+    .sliderWrapper {
+      display: block;
     }
+    .landingImgWrapper {
+      display: none;
+    }
+  }
+  .sec2 {
+    padding: 10rem 0;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 1px solid blue;
+  }
+  .sec3 {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 1px solid blue;
   }
 }
 @media all and (min-width: 1024px) {
   .mainWrapper {
     .sec1 {
-      margin-top: 12vh;
+      padding-top: 12vh;
       width: 100%;
-      height: 90vh;
+      height: 100vh;
       background-color: #fff;
-      // border: 1px solid red;
+      border-bottom: 1px solid blue;
       .sliderWrapper {
         display: block;
       }
@@ -57,14 +79,15 @@
       }
     }
     .sec2 {
+      padding: 10rem 0;
       width: 100%;
       height: 100vh;
-      background-color: gray;
+      border-bottom: 1px solid blue;
     }
     .sec3 {
       width: 100%;
       height: 100vh;
-      background-color: blue;
+      border-bottom: 1px solid blue;
     }
   }
 }
