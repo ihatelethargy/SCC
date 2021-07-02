@@ -95,12 +95,6 @@
   .header {
     background-color: #303243;
     height: 12vh;
-    .shortDown {
-      // display: block;
-      font-size: 2.1rem;
-    }
-    background-color: #303243;
-
     .logoWrapper {
       width: 15%;
       // border: 1px solid red;
@@ -121,7 +115,7 @@
       align-items: center;
       justify-content: space-around;
       .menuItem {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         color: #ffffff;
         font-weight: 700;
         .ham {
