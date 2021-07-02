@@ -12,16 +12,16 @@ function Header() {
         </div>
         <div className="menuWrapper">
           <div className="menuItem">
-            <span>소개</span>
+            <span>ABOUT</span>
           </div>
           <div className="menuItem">
-            <span>교육안내</span>
+            <span>EDUCATION</span>
           </div>
           <div className="menuItem">
-            <span>인증항목</span>
+            <span>CERTIFICATION</span>
           </div>
           <div className="menuItem">
-            <span>Blog</span>
+            <span>BLOG</span>
           </div>
           <div className="menuItem hamItem">
             <img class="ham" src={ham} alt="" />
