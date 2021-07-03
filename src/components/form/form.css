@@ -16,15 +16,3 @@
     width: 70%;
     background-color: #f0fff0;
 }
-.inputBox {
-    
-}
-
-.customModal {
-      top: '50%';
-      left: '50%';
-      right: 'auto';
-      bottom: 'auto';
-      margin-right: '-50%';
-      transform: 'translate(-50%, -50%)';
-  };
