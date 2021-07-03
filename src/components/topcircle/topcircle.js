@@ -2,7 +2,7 @@ import React from 'react';
 import './topbutton.scss';
 import arrowTop from '../../../src/img/arrowTop.png';
 
-function Topbutton() {
+function TopCircle() {
   return (
     <>
       <a href="#top">
@@ -15,4 +15,4 @@ function Topbutton() {
   );
 }
 
-export default Topbutton;
+export default TopCircle;

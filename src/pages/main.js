@@ -1,7 +1,7 @@
 import react from 'react';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
-import Topbutton from '../components/topbutton/topbutton';
+import TopCircle from "../components/topcircle/topcircle";
 import ApplyPillButton from '../components/applypillbutton/applypillbutton';
 import './scss/main.scss';
 import Slider from '../components/slider/Slider';
@@ -26,7 +26,7 @@ function Main() {
         <FlowBanner />
       </div>
       <div className="sec3"></div>
-      <Topbutton />
+      <TopCircle />
       <ApplyPillButton />
       <Footer />
     </div>
