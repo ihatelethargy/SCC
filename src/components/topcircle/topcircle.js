@@ -1,5 +1,5 @@
 import React from 'react';
-import './topbutton.scss';
+import './topcircle.scss';
 import arrowTop from '../../../src/img/arrowTop.png';
 
 function TopCircle() {
