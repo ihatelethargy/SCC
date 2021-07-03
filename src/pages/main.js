@@ -1,7 +1,7 @@
 import react from 'react';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
-import Topbutton from '../components/Topbutton/topbutton';
+import Topbutton from '../components/topbutton/topbutton';
 import ApplyPillButton from '../components/applypillbutton/applypillbutton';
 import './scss/main.scss';
 import Slider from '../components/slider/Slider';
