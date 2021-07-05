@@ -1,14 +1,19 @@
-import react from "react"
+import react, { useContext } from "react"
 import FormSet from "../components/form/form";
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import Kakao from "../components/kakao/kakao";
 import './scss/form.scss';
 
+import {SccContext} from "../context/scc";
+
 function Form(){
+    const {eduflag} = useContext(SccContext);
     return (
         <>
-        <div class="formWrapper">
+        {
+            eduflag? 
+            <div class="formWrapper">
             <Header/>
             <div class="sec1">
 
@@ -16,9 +21,20 @@ function Form(){
             <div class="sec2">
                 <FormSet/>
             </div>
-            <Kakao/>
-            <Footer/>
+        </div> :
+        <div class="formWrapper">
+        <Header/>
+        <div class="sec1">
+
         </div>
+        <div class="sec2">
+            <FormSet/>
+        </div>
+        
+    </div>
+        }
+         <Kakao/>
+         <Footer/>
         </>
 
     )
