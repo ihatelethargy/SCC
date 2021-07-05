@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import {useForm} from "react-hook-form";
 import {send} from 'emailjs-com';
 import Modal from 'react-modal';
-import "./form.css";
+import "./form.scss";
+import { useHistory } from "react-router";
 
 const customStyles = {
     content: {
@@ -16,7 +17,6 @@ const customStyles = {
   };
 
 export default function FormSet(){
-    const [files,setFiles] = useState([]);
     const [toSend, setToSend] = useState({
         username: '',
         call: '',
@@ -25,12 +25,16 @@ export default function FormSet(){
       });
     const [emailText, setEmailText] = useState("이메일 형식이 잘못되었습니다.");
     const [mod,setMod] = useState(false);
-    const [mm,setMm] = useState('');
+    const [mm,setMm] = useState({
+        msg : '',
+        closebutton : true,
+        err : false,
+    });
     const re = /\S+@\S+\.\S+/;
 
       const onSubmit = (e) => {
         if(check()){
-            setMm("전송중입니다.");
+            setMm({msg : "전송중입니다.", closebutton : false, err : false});
             setMod(true);
             e.preventDefault();
             send(
@@ -41,12 +45,12 @@ export default function FormSet(){
             )
               .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
-                setMm("신청이 완료되었습니다!");
+                setMm({msg : "신청이 완료되었습니다!", closebutton : true, err : false});
                 setMod(true);
               })
               .catch((err) => {
                 console.log('FAILED...', err);
-                setMm("Email Server Error : 500");
+                setMm({msg : "Email Server Error : 500", closebutton : true, err : true});
                 setMod(true);
               });
         }else{
@@ -101,50 +105,57 @@ export default function FormSet(){
         let et = re.test(toSend.email);
         let nt = toSend.username.length >0;
         let pt = toSend.enter.length >0;
-        let ct = toSend.call.length >0;
+        let ct = toSend.call.length ===13;
         return(et&&nt&&pt&&ct);
 
-    }
-
-    const openModal =()=>{
-        setMod(true);
     }
 
     const closeModal =()=>{
         setMod(false);
     }
-
-    //files
-    const filesHandler = (e) =>{
-        setFiles(e.target.value);
+    const reload = () => {
+        window.location.reload();
     }
-
     
 
     return(
-        <div class="formContainer">
-            <form noValidate class="formBox" enctype="multipart/form-data">
+        <div class="mainWrapper">
+            <form noValidate class="formBox" target="if">
                 <div class="inputContainer">
-                    <form noValidate target="if">
-                        <input placeholder="성함(직위)"  type="text" name="username" value={toSend.username} onChange={usernameChange}/>
-                        <input placeholder="휴대폰 번호" type="text" name="call" value={toSend.call} onChange={callChange}/>
-                        <input placeholder="Email 주소" type="text" name="email" value={toSend.email} onChange={emailChange}/>
-                        <div><p>{emailText}</p></div>
-                        <input placeholder="기업형(업태/종목)"  type="text" name="enter" value={toSend.enter} onChange={enterChange}/>
+                        <div><input class="inputBox" placeholder="성함(직위)"  type="text" name="username" value={toSend.username} onChange={usernameChange}/></div>
+                        <div><input class="inputBox" placeholder="휴대폰 번호" type="text" name="call" value={toSend.call} onChange={callChange}/></div>
+                        <div><input class="inputBox" placeholder="Email 주소" type="text" name="email" value={toSend.email} onChange={emailChange}/></div>
+                        <div class="emailTextBox"><p>{emailText}</p></div>
+                        <div><input class="inputBox" placeholder="기업형(업태/종목)"  type="text" name="enter" value={toSend.enter} onChange={enterChange}/></div>
                         <button onClick={onSubmit}>Submit</button>
-                    </form>
                 </div>
             </form>
             <div>
+                {mm.closebutton ? 
                 <Modal
                     isOpen={mod}
                     onRequestClose={closeModal}
                     close={closeModal}
                     style={customStyles}
                     contentLabel="dev">
-                        <div>{`${mm}`}</div>
-                        <button onClick={closeModal}>닫기</button>
+                        <div>{`${mm.msg}`}</div>
+                        {mm.err?
+                            <button onClick={closeModal}>닫기</button>
+                            :
+                            <button onClick={closeModal,reload}>닫기</button>
+                        }
                     </Modal>
+                    :
+                    <Modal
+                    isOpen={mod}
+                    onRequestClose={closeModal}
+                    close={closeModal}
+                    style={customStyles}
+                    contentLabel="dev">
+                        <div>{`${mm.msg}`}</div>
+                    </Modal>
+                    }
+                
             </div>
             <iframe id="if" name="if" style={{display:'none'}}></iframe>
         </div>
