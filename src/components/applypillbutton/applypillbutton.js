@@ -1,5 +1,6 @@
+import { whileStatement } from '@babel/types';
 import react from 'react';
-import { useHistory } from 'react-router';
+import { useHistory, Link } from 'react-router-dom';
 import './applypillbutton.scss';
 
 function ApplyPillButton() {
@@ -8,7 +9,7 @@ function ApplyPillButton() {
     <>
       <div className="applyWrapper">
         <div className="textWrapper">
-          <span><button class="button_1" onClick={()=>{history.replace("/barifurcation");}}>교육/인증 신청하기</button></span>
+          <span><Link to="/barifurcation" replace><text>교육/인증 신청하기</text></Link></span>
         </div>
       </div>
     </>

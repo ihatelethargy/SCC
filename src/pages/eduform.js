@@ -5,7 +5,8 @@ import Footer from '../components/footer/footer';
 import Kakao from "../components/kakao/kakao";
 import './scss/form.scss';
 
-function Form(){
+
+function EduForm(){
     return (
         <>
             <div class="formWrapper">
@@ -15,9 +16,10 @@ function Form(){
             </div>
             <div class="sec2">
                 <FormSet/>
+                
             </div>
         </div> 
-        <p>인증폼</p>
+        <p>에듀폼</p>
          <Kakao/>
          <Footer/>
         </>
@@ -25,4 +27,4 @@ function Form(){
     )
 }
 
-export default Form;
+export default EduForm;
