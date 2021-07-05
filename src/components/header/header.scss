@@ -1,4 +1,9 @@
 // start common
+button {
+  background-color: transparent;
+  border: none;
+}
+
 .header {
   width: 100%;
   height: auto;
@@ -9,11 +14,16 @@
   top: 0;
   font-family: 'ONE-Mobile-Regular';
   background-color: rgba(48, 50, 67, 0.6);
+  button {
+    background-color: transparent;
+    border: none;
+  }
 }
+
 // end common
-.button_1{
+.button_1 {
   background-color: rgba(48, 50, 67, 0.6);
-  border : 0px;
+  border: 0px;
 }
 // start mobile
 @media all and (min-width: 320px) {
@@ -163,15 +173,6 @@
         position: relative;
       }
 
-      .menuItem span:before {
-        content: '';
-        position: absolute;
-        background-color: dodgerblue;
-        height: 0.3rem;
-        width: 0;
-        bottom: -1px;
-        transition: 0.5s;
-      }
       .menuItem span:hover:before {
         width: 100%;
       }
