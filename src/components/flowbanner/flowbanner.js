@@ -4,6 +4,7 @@ import flow7 from '../../static/images/flow7logo.png';
 import flow6 from '../../static/images/flow6logo.png';
 import flow5 from '../../static/images/flow5logo.png';
 import './flowbanner.scss';
+// 누끼 logo 1~4더 따기
 
 const scrolling = keyframes`
     0%{
@@ -16,8 +17,7 @@ const scrolling = keyframes`
 
 const Marq = styled.div`
   width: 100%;
-  height: 10vw;
-  background-color: #303243;
+  height: 18vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -25,12 +25,11 @@ const Marq = styled.div`
 `;
 
 const MarqUl = styled.ul`
+  background-color: #303243;
   list-style: none;
-  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  @media (max-width: 1024px) {
-  }
+  height: 12vh;
   animation: ${scrolling} 12s linear infinite;
 `;
 
@@ -39,15 +38,12 @@ const MarqLi = styled.li`
   justify-content: center;
   align-items: center;
   width: 33vw;
-  flex-shrink: 0;
+  height: 100%;
   white-space: nowrap;
   color: #ffffff;
-  font-size: 2vw !important;
   @media (max-width: 1024px) {
     font-size: 15px;
   }
-  font-weight: 400;
-  line-height: 36px;
 `;
 
 const bannerMsg1 = 'LOGO';

@@ -14,17 +14,9 @@ function Main() {
     <div class="mainWrapper">
       <Header />
       <div className="sec1" id="top">
-        <div className="sliderWrapper">
-          <Slider />
-        </div>
-        <div className="landingImgWrapper">
-          <img src={landing} alt="" />
-        </div>
+        <div className="landingImgWrapper">{/* <img src="" alt="" /> */}</div>
       </div>
-      <div className="sec2">
-        {/* <Slogan /> */}
-        <FlowBanner />
-      </div>
+      <div className="sec2">asdf</div>
       <div className="sec3"></div>
       <Topbutton />
       <ApplyPillButton />
