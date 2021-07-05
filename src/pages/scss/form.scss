@@ -1,0 +1,52 @@
+.formWrapper {
+    width : 100%;
+    height : auto;
+}
+
+@media all and (min-width:320px){
+    .formWrapper{
+        .sec1{
+            padding-top: 12vh;
+                width : 80%;
+                height : 50vh;
+                border : 2px solid #cf1029;
+        }
+        .sec2{
+                width : 80%;
+                height : 80vh;
+                border : 2px solid #000000;
+        }
+    }
+}
+
+@media all and (min-width:768px){
+    .formWrapper{
+        .sec1{
+            padding-top: 12vh;
+            width : 80%;
+            height : 50vh;
+            border : 2px solid #cf1029;
+        }
+        .sec2{
+            width : 80%;
+            height : 80vh;
+            border : 2px solid #000000;
+        }
+    }
+}
+
+@media all and (min-width:1024px){
+    .formWrapper{
+        .sec1{
+            padding-top: 12vh;
+            width : 80%;
+            height : 50vh;
+            border : 2px solid #cf1029;
+        }
+        .sec2{
+            width : 80%;
+            height : 80vh;
+            border : 2px solid #000000;
+        }
+    }
+}

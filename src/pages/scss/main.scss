@@ -1,31 +1,93 @@
 .mainWrapper {
   width: 100%;
   height: auto;
+  .sec1 {
+    position: relative;
+  }
 }
 @media all and (min-width: 320px) {
   .mainWrapper {
     .sec1 {
+      // border-bottom: 1px solid blue;
+      padding-top: 12vh;
       width: 100%;
-      height: 100vh;
+      height: 50vh;
       background-color: #fff;
+      .sliderWrapper {
+        display: none;
+      }
+      .landingImgWrapper {
+        display: block;
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
     }
     .sec2 {
       width: 100%;
       height: 100vh;
-      background-color: red;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid blue;
     }
     .sec3 {
       width: 100%;
       height: 100vh;
-      background-color: blue;
+      border-bottom: 1px solid blue;
     }
   }
 }
 @media all and (min-width: 768px) {
-  .mainWrapper {
+  .sec1 {
+    padding-top: 12vh;
+    width: 100%;
+    height: 200vh;
+    background-color: #fff;
+    .sliderWrapper {
+      display: block;
+    }
+    .landingImgWrapper {
+      display: none;
+    }
+  }
+  .sec2 {
+    padding: 10rem 0;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 1px solid blue;
+  }
+  .sec3 {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 1px solid blue;
   }
 }
 @media all and (min-width: 1024px) {
   .mainWrapper {
+    .sec1 {
+      padding-top: 12vh;
+      width: 100%;
+      height: 100vh;
+      background-color: #fff;
+      border-bottom: 1px solid blue;
+      .sliderWrapper {
+        display: block;
+      }
+      .landingImgWrapper {
+        display: none;
+      }
+    }
+    .sec2 {
+      padding: 10rem 0;
+      width: 100%;
+      height: 100vh;
+      border-bottom: 1px solid blue;
+    }
+    .sec3 {
+      width: 100%;
+      height: 100vh;
+      border-bottom: 1px solid blue;
+    }
   }
 }
