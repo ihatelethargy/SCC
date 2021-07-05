@@ -10,21 +10,23 @@ function Header() {
         <div className="logoWrapper">
           <img class="logo" src={logoE} alt="" />
         </div>
-        <div className="menuWrapper">
-          <div className="menuItem">
-            <span>ABOUT</span>
-          </div>
-          <div className="menuItem">
-            <span>EDUCATION</span>
-          </div>
-          <div className="menuItem">
-            <span>CERTIFICATION</span>
-          </div>
-          <div className="menuItem">
-            <span>BLOG</span>
-          </div>
-          <div className="menuItem hamItem">
-            <img class="ham" src={ham} alt="" />
+        <div className="menuBlock">
+          <div className="menuWrapper">
+            <div className="menuItem">
+              <span>ABOUT</span>
+            </div>
+            <div className="menuItem">
+              <span>EDUCATION</span>
+            </div>
+            <div className="menuItem">
+              <span>CERTIFICATION</span>
+            </div>
+            <div className="menuItem">
+              <span>BLOG</span>
+            </div>
+            <div className="menuItem hamItem">
+              <img class="ham" src={ham} alt="" />
+            </div>
           </div>
         </div>
       </div>

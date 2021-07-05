@@ -30,11 +30,16 @@
         width: 90%;
       }
     }
+    .menuBlock {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
     .menuWrapper {
       width: 70%;
       height: 100%;
       display: flex;
-      // display: none;
       align-items: center;
       justify-content: space-around;
       .menuItem {
@@ -49,8 +54,12 @@
         height: 100%;
         display: flex;
         align-items: center;
-        position: relative;
+        // position: relative;
         display: none;
+      }
+
+      .menuItem span {
+        position: relative;
       }
 
       .menuItem span:before {
@@ -97,7 +106,6 @@
     height: 12vh;
     .logoWrapper {
       width: 15%;
-      // border: 1px solid red;
       height: 100%;
       display: flex;
       align-items: center;
@@ -107,10 +115,14 @@
         width: 10rem;
       }
     }
+    .menuBlock {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
     .menuWrapper {
-      width: 40%;
-      //   border: 2px solid red;
-
+      width: 50%;
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -158,8 +170,9 @@
         transition: 0.5s;
       }
       .menuItem span:hover:before {
-        width: 5rem;
+        width: 100%;
       }
+
       .hamItem {
         display: none;
       }
