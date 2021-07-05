@@ -14,30 +14,54 @@
 @media all and (min-width: 320px) {
   .footerWrapper {
     width: 100%;
-    height: 5rem;
+    height: 8rem;
     .footerLogoWrapper {
+      color: #ffffff;
+      font-size: 0.4rem;
       width: 35%;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      .footerLogo {
-        width: 90%;
-        display: block;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-top: 0.5rem;
+      font-weight: 800;
+      .footerLogoText {
+        margin-left: 0.2rem;
       }
     }
     .footerContents {
       width: 65%;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
-      .footerInfo {
-        font-size: 0.1rem;
-        text-align: center;
-        line-height: 1.3;
-        color: #ffffff;
-        font-weight: 100;
+      margin-top: 0.5rem;
+      .contentsItem {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        .footerItem {
+          margin-right: 0.5rem;
+          color: #ffffff;
+          .infoTitle {
+            font-weight: 800;
+          }
+          .infoTitleDes {
+            color: #ffffff;
+            font-size: 0.005rem;
+          }
+        }
       }
     }
+  }
+  .footerCopy {
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.4rem;
+    color: gray;
+    background-color: #303243;
   }
 }
 // end mobile
@@ -46,8 +70,41 @@
 @media all and (min-width: 768px) {
   .footerWrapper {
     width: 100%;
-    background-color: #303243;
-    display: flex;
+    height: 7rem;
+    .footerLogoWrapper {
+      color: #ffffff;
+      font-size: 0.4rem;
+      width: 35%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: 0.5rem;
+      font-weight: 800;
+    }
+    .footerContents {
+      width: 65%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: 0.5rem;
+      .contentsItem {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        .footerItem {
+          margin-right: 0.5rem;
+          color: #ffffff;
+          .infoTitle {
+            font-weight: 800;
+          }
+          .infoTitleDes {
+            color: #ffffff;
+            font-size: 0.005rem;
+          }
+        }
+      }
+    }
   }
 }
 // end tablet
@@ -56,30 +113,54 @@
 @media all and (min-width: 1024px) {
   .footerWrapper {
     width: 100%;
-    height: 8em;
+    height: 7rem;
     .footerLogoWrapper {
+      color: #ffffff;
+      font-size: 0.8rem;
       width: 35%;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      .footerLogo {
-        width: 40%;
-        display: block;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-top: 0.5rem;
+      font-weight: 800;
+      .footerLogoText {
+        margin-left: 3rem;
       }
     }
     .footerContents {
       width: 65%;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
-      .footerInfo {
-        font-size: 1.1rem;
-        text-align: center;
-        line-height: 1.2;
-        color: #ffffff;
-        font-weight: 300;
+      margin-top: 0.5rem;
+      .contentsItem {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        .footerItem {
+          margin-right: 2rem;
+          color: #ffffff;
+          .infoTitle {
+            font-weight: 800;
+          }
+          .infoTitleDes {
+            color: #ffffff;
+            font-size: 0.005rem;
+          }
+        }
       }
     }
+  }
+  .footerCopy {
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    color: gray;
+    background-color: #303243;
   }
 }
 // end desktop
