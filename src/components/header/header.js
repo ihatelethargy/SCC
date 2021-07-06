@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './header.scss';
 import logoE from '../../img/sccLogo.png';
 import ham from '../../img/hambur.png';
 import { useHistory } from 'react-router';
+import { SccContext } from '../../context/scc';
 
 function Header() {
   let history = useHistory();
+  const { prac } = useContext(SccContext);
   return (
     <>
       <div className="header">
@@ -23,7 +25,8 @@ function Header() {
         <div className="menuBlock">
           <div className="menuWrapper">
             <div className="menuItem">
-              <span>ABOUT</span>
+              <span>ABOUT </span>
+              {/* {prac} */}
             </div>
             <div className="menuItem">
               <span>EDUCATION</span>

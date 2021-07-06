@@ -1,7 +1,7 @@
-import react from 'react';
+import react, { useContext } from 'react';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
-import TopCircle from "../components/topcircle/topcircle";
+import TopCircle from '../components/topcircle/topcircle';
 import ApplyPillButton from '../components/applypillbutton/applypillbutton';
 import './scss/main.scss';
 import Slider from '../components/slider/Slider';
@@ -15,9 +15,9 @@ function Main() {
     <div class="mainWrapper">
       <Header />
       <div className="sec1" id="top">
-        <div className="landingImgWrapper">{/* <img src="" alt="" /> */}</div>
+        <div className="landingImgWrapper"></div>
       </div>
-      <div className="sec2">asdf</div>
+      <div className="sec2"></div>
       <div className="sec3"></div>
       <Kakao/>
       <TopCircle />
