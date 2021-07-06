@@ -25,7 +25,6 @@ function Main() {
       <Route component={TopCircle} />
       <Route component={ApplyPillButton} />
       <Route component={Footer} />
-      <Footer />
     </div>
   );
 }
