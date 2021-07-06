@@ -1,85 +1,16 @@
 .mainWrapper {
   width: 100%;
   height: auto;
-  .sec1 {
-    position: relative;
-  }
 }
 @media all and (min-width: 320px) {
   .mainWrapper {
-    .sec1 {
-      padding-top: 12vh;
-      width: 100%;
-      height: 50vh;
-      background-color: #fff;
-      .landingImgWrapper {
-        width: 100%;
-        height: 100vh;
-        background-image: url('https://i.ibb.co/BLcds1H/landgin-Img.jpg');
-        background-repeat: no-repeat; // background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다.
-        background-size: cover; // 사이즈가 container에 맞지 않아도 꽉 차도록 채운다.
-        background-position: center; // background-image가 컨테이너에 가운데로 오도록 한다.
-      }
-    }
-    .sec2 {
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      border-bottom: 1px solid blue;
-    }
-    .sec3 {
-      width: 100%;
-      height: 100vh;
-      border-bottom: 1px solid blue;
-    }
   }
 }
 @media all and (min-width: 768px) {
-  .sec1 {
-    padding-top: 12vh;
-    width: 100%;
-    height: 200vh;
-    background-color: #fff;
-  }
-  .sec2 {
-    width: 100%;
-    height: 100vh;
-    border-bottom: 1px solid blue;
-  }
-  .sec3 {
-    width: 100%;
-    height: 100vh;
-    border-bottom: 1px solid blue;
+  .mainWrapper {
   }
 }
 @media all and (min-width: 1024px) {
   .mainWrapper {
-    .sec1 {
-      padding-top: 12vh;
-      width: 100%;
-      height: 100vh;
-      background-color: #fff;
-      border-bottom: 1px solid blue;
-      .landingImgWrapper {
-        width: 100%;
-        height: 100vh;
-        background-image: url('https://i.ibb.co/BLcds1H/landgin-Img.jpg');
-        // background-image: url('https://i.ibb.co/BLcds1H/landgin-Img.jpg');
-        background-repeat: no-repeat; // background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다.
-        background-size: cover; // 사이즈가 container에 맞지 않아도 꽉 차도록 채운다.
-        background-position: center; // background-image가 컨테이너에 가운데로 오도록 한다.
-      }
-    }
-    .sec2 {
-      width: 100%;
-      height: 100vh;
-      border-bottom: 1px solid blue;
-    }
-    .sec3 {
-      width: 100%;
-      height: 100vh;
-      border-bottom: 1px solid blue;
-    }
   }
 }
