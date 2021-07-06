@@ -8,6 +8,7 @@ import Slider from '../components/slider/Slider';
 import Slogan from '../components/slogan/slogan';
 import landing from '../static/images/slider1.png';
 import FlowBanner from '../components/flowbanner/flowbanner';
+import Kakao from "../components/kakao/kakao";
 
 function Main() {
   return (
@@ -18,6 +19,7 @@ function Main() {
       </div>
       <div className="sec2">asdf</div>
       <div className="sec3"></div>
+      <Kakao/>
       <TopCircle />
       <ApplyPillButton />
       <Footer />

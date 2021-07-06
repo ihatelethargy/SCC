@@ -9,7 +9,7 @@ function ApplyPillButton() {
     <>
       <div className="applyWrapper">
         <div className="textWrapper">
-          <span><Link to="/barifurcation" replace><text>교육/인증 신청하기</text></Link></span>
+          <span><Link to="/barifurcation"><text>교육/인증 신청하기</text></Link></span>
         </div>
       </div>
     </>
