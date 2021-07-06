@@ -1,4 +1,5 @@
 // start common
+
 button {
   background-color: transparent;
   border: none;
@@ -140,6 +141,13 @@ button {
       align-items: center;
       justify-content: space-around;
       .menuItem {
+        .blogBtn {
+          color: #ffffff;
+          font-size: 1.3rem;
+          a {
+            text-decoration: none;
+          }
+        }
         font-size: 1.3rem;
         color: #ffffff;
         font-weight: 700;

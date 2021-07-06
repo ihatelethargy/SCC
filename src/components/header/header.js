@@ -37,6 +37,7 @@ function Header() {
             <div className="menuItem">
               <span>
                 <button
+                  class="blogBtn"
                   onClick={() =>
                     window.open('https://blog.naver.com/ztop021', '_blank')
                   }
