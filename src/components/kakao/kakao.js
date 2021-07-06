@@ -5,9 +5,7 @@ export default function Kakao() {
   useEffect(() => {
     const script = document.createElement('script');
     script.async = true;
-    try {
-      window.Kakao.init('580d16e31b9329a3a0b977f32adbc7d0');
-    } catch (e) {}
+    try{window.Kakao.init('580d16e31b9329a3a0b977f32adbc7d0');} catch(e){}
     window.Kakao.Channel.createChatButton({
       container: '#kakao-talk-channel-chat-button',
       channelPublicId: '_QxbbPs',

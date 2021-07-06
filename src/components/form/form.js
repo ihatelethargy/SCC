@@ -54,7 +54,7 @@ export default function FormSet(){
                 setMod(true);
               });
         }else{
-            setMm("이메일 형식 혹은 빈칸이 없는 지 확인해주세요.");
+            setMm({msg : "이메일 형식 포함 양식에 맞는 지 확인해 주세요.", closebutton : true, err : false});
                 setMod(true);
         }
       };
@@ -122,12 +122,14 @@ export default function FormSet(){
         <div class="mainWrapper">
             <form noValidate class="formBox" target="if">
                 <div class="inputContainer">
-                        <div><input class="inputBox" placeholder="성함(직위)"  type="text" name="username" value={toSend.username} onChange={usernameChange}/></div>
-                        <div><input class="inputBox" placeholder="휴대폰 번호" type="text" name="call" value={toSend.call} onChange={callChange}/></div>
-                        <div><input class="inputBox" placeholder="Email 주소" type="text" name="email" value={toSend.email} onChange={emailChange}/></div>
+                    <div class="inputcover">
+                        <input class="inputBox" placeholder="성함(직위)"  type="text" name="username" value={toSend.username} onChange={usernameChange}/>
+                        <input class="inputBox" placeholder="휴대폰 번호" type="text" name="call" value={toSend.call} onChange={callChange}/>
+                        <input class="inputBox" placeholder="기업형(업태/종목)"  type="text" name="enter" value={toSend.enter} onChange={enterChange}/>
+                        <input class="inputBox" placeholder="Email 주소" type="text" name="email" value={toSend.email} onChange={emailChange}/>
                         <div class="emailTextBox"><p>{emailText}</p></div>
-                        <div><input class="inputBox" placeholder="기업형(업태/종목)"  type="text" name="enter" value={toSend.enter} onChange={enterChange}/></div>
                         <button onClick={onSubmit}>Submit</button>
+                    </div>
                 </div>
             </form>
             <div>

@@ -1,30 +1,42 @@
 .mainWrapper{
     width : 100%;
     min-height : 60%;
-    border-radius: 20px;
-    z-index: 7;
+    display: flex;
+    flex-direction: column;
 
 }
 
 @media all and (min-width: 320px){
     .mainWrapper{
         .formBox{
-            display: block;
-            padding : 30px 40px;
+            display: flex;
+            justify-content: center;
             .inputContainer {
-                width : 70%;
+                width : 90%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 border : 5px solid #0000ff;
-                .inputBox {
-                    border-radius: 10px;
-                    margin-top: 1rem;
-                    padding : 1rem 1rem;
+                .inputcover{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border : 1px solid #f200ff;
+                    .inputBox {
+                        border-radius: 15px;
+                        margin-top: 0.5rem;
+                        padding : 0.5rem 0.5rem;
+                        width: 90%;
+                    }
+                    .emailTextBox {
+                        margin-top : 0.5rem;
+                        padding-left: 1rem;
+                    }
+                    .button {
+                        
+                    }
                 }
-                .emailTextBox {
-                    margin-top : 1rem;
-                }
+                
             }
         }
     }
@@ -43,8 +55,8 @@
                 border : 5px solid #0000ff;
                 .inputBox {
                     border-radius: 10px;
-                    margin-top: 1rem;
-                    padding : 1rem 1rem;
+                    margin-top: 0.5rem;
+                    padding : 0.5rem 0.5rem;
                 }
                 .emailTextBox {
                     margin-top : 1rem;
@@ -59,19 +71,27 @@
         .formBox{
             display: block;
             .inputContainer {
-                width : 70%;
+                width : 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 border : 5px solid #0000ff;
-                .inputBox {
-                    border-radius: 10px;
-                    margin-top: 1rem;
-                    padding : 1rem 1rem;
+                .inputcover{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .inputBox {
+                        width: 200%;
+                        border-radius: 10px;
+                        margin-top: 0.5rem;
+                        padding : 0.5rem 0.5rem;
+                        border : 1px solid #00ffff;
+                    }
+                    .emailTextBox {
+                        margin-top : 1rem;
+                    }
                 }
-                .emailTextBox {
-                    margin-top : 1rem;
-                }
+                
             }
         }
     }
