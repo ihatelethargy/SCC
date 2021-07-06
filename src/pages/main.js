@@ -10,9 +10,9 @@ import landing from '../static/images/slider1.png';
 import FlowBanner from '../components/flowbanner/flowbanner';
 import Kakao from '../components/kakao/kakao';
 import { Route } from 'react-router-dom';
-import SecOne from '../components/secone/secone';
-import SecTwo from '../components/sectwo/sectwo';
-import SecThree from '../components/secthree/secthree';
+import SecOne from '../components/section/mainsection/secone/secone';
+import SecTwo from '../components/section/mainsection/sectwo/sectwo';
+import SecThree from '../components/section/mainsection/secthree/secthree';
 
 function Main() {
   return (
